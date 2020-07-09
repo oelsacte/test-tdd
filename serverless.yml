@@ -1,0 +1,25 @@
+service: test-tdd
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+plugins:
+  - serverless-offline
+
+functions:
+  crud-application:
+    handler: server.handler #controllers/server.handler # required, handler set in AWS Lambda
+    events:
+      - http:
+          path: /test
+          method: get
+      - http:
+          path: /test
+          method: post
+      - http:
+          path: /test/{id}
+          method: delete
+      - http:
+          path: /test/{id}
+          method: put
