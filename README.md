@@ -1,6 +1,10 @@
-# Requerimientos
+# Descripción del proyecto
 
-Simple serverless project
+El proyecto es una API REST fake que implementa un serverless fuera de línea para ser ejecutado localmente en un equipo de prueba.
+
+The project is a fake REST API that implements an offline serverless to be run locally on a test machine.
+
+# Requerimientos
 
 ### Pre-requisitos
 
